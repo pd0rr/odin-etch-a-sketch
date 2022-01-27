@@ -3,3 +3,7 @@
     width: 100px;
     border: solid black;
 }
+
+.row {
+    display: flex;
+}
