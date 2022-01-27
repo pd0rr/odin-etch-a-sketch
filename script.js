@@ -31,6 +31,8 @@ function reset(newSize) {
     let container = document.querySelector("#grid-container");
     container.innerHTML = '';
     
+    newSize = Math.min(newSize, 100);
+
     for (let i = 0; i < newSize; i++) {
         let row = document.createElement("div");
         row.classList.add("row");
@@ -54,5 +56,5 @@ function reset(newSize) {
 
 let resetButton = document.querySelector("#reset");
 resetButton.addEventListener('click', function() {
-    reset(prompt("New Size: "));
+    reset(prompt("New Size (max 100): "));
 });
