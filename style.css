@@ -1,7 +1,11 @@
+#grid-container {
+    border: solid black;
+    width: fit-content;
+}
+
 .square {
     height: 50px;
     width: 50px;
-    border: solid black;
 }
 
 .row {
